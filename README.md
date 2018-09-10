@@ -4,10 +4,10 @@
 //getSourceData方法加载考卷（注释从服务端获取，改为从本地加载）<br/>
 //加载本地json（test_data.json为本地考题样例文件）<br/>
 
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"test_data.json" ofType:nil];<br/>
-    NSData *data = [NSData dataWithContentsOfFile:path];<br/>
-    NSDictionary *resultDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];<br/>
-    self.examsM = [ExamsModel mj_objectWithKeyValues:resultDict];<br/>
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"test_data.json" ofType:nil];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    NSDictionary *resultDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    self.examsM = [ExamsModel mj_objectWithKeyValues:resultDict];
 
 <br>[开始考试]<br/><br><img src="https://github.com/BigZhanghan/XMTest/blob/master/XMTest/ScreenShoot/IMG_0552.PNG" width = "375" height = "667" /><br/>
 <br>[题1]<br/><br><img src="https://github.com/BigZhanghan/XMTest/blob/master/XMTest/ScreenShoot/IMG_0555.PNG" width = "375" height = "667" /><br/>
