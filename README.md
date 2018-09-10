@@ -3,6 +3,7 @@
 
 //getSourceData方法加载考卷（注释从服务端获取，改为从本地加载）<br/>
 //加载本地json（test_data.json为本地考题样例文件）<br/>
+
     NSString *path = [[NSBundle mainBundle] pathForResource:@"test_data.json" ofType:nil];<br/>
     NSData *data = [NSData dataWithContentsOfFile:path];<br/>
     NSDictionary *resultDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];<br/>
